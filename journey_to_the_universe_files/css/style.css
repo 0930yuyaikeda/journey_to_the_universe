@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* JOURNEY TO THE UNIVERSE */
+
+/* Setting the body */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Setting the framework */
+#journey_to_the_universe_scroll {
+    overflow-y: scroll;
+    height:100vh;
+    width: 100vw;
+    background-color:#A5D6EF;
+    transition:
+        all 1.5s ease-in-out
+        ;
+}
+
+/* Setting the space center */
+#space_center {
+    width: 100vw;
+    z-index: 0;
+}
+
+/* Setting the rocket */
+#rocket {
+    position: fixed;
+    width: 8vw;
+    z-index: 10;
+    margin-left: 46%;
+    bottom: max(0px, 0px);
+    margin-bottom: 7%;
+}
+
+/* base_container setting */
+.base_container{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+/* scroll up setting and animation */
+#scroll_up {
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+}
+#scroll_up::before {
+    animation: scroll 3.5s infinite;
+    border: solid #FFFFFF;
+    border-width: 0 0 1px 1px;
+    content: "";
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 20px;
+}
+@keyframes scroll {
+    0% {
+        transform: rotate(-225deg) translate(0, 0);
+    }
+    80% {
+        transform: rotate(-225deg) translate(-30px, 30px);
+    }
+    0%, 80%, 100% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
+
+/* opening_container setting */
+.opening_container {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 25px 0px 560px 0px;
+}
+
+/* display_non */
+.display_non{
+    opacity: 0;
+}
+
+/* universe_container */
+
+.universe_container {
+    margin: 25px 0px 25px 0px;
+}
+
+.universe_spacer {
+    margin: 25px 0px 560px 0px;
+}
+
+.universe_space_double {
+    margin: 25px 0px 1120px 0px;
+}
+
+.universe_row {
+    display: flex;
+}
+
+.universe_col_bg {
+    width: 66%;
+    text-align: center;
+}
+
+.universe_col_sm {
+    width: 33%;
+    text-align: center;
+}
+
+.universe_col_all {
+    width: 100%;
+    text-align: center;
+}
+
+.universe_container_img {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.universe_container_title_japanese {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+.universe_container_title_english {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+
+.universe_container_distance {
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+.universe_container_sentence{
+    font-size: 18px;
+    text-align: left;
+    color: #FFFFFF;
+    padding: 5px 25px;
+}
+
+.light_speed_message1{
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    padding: 5px 25px;
+}
+
+.light_speed_message2{
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    padding: 5px 25px;
+}
+
+/* End of JOURNEY */
+.end_of_journey_container{
+    background-color: #000000;
+    background-image: url("../img/background_universe.png");
+    background-repeat: repeat;
+}
