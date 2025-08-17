@@ -21,13 +21,20 @@ window.addEventListener('resize', checkScreenWidth);
 window.onload = function() {
 
     // ***==========*** ↓↓  Loading event! ↓↓  ***==========***
-    const loading = document.getElementById("loading");
-    loading.classList.add("display_non");
-
+    // Show a loading screen for at least one second
     window.setTimeout(function(){
-        loading.remove();
-    }, 1000);
 
+        // Get loading element
+        const loading = document.getElementById("loading");
+        loading.classList.add("display_non");
+
+        // When end the loading, remove loading element
+        // There is [transition] in css so it need 1000
+        window.setTimeout(function(){
+            loading.remove();
+        }, 1000);
+
+    }, 1000);
     // ***==========*** ↑↑  Loading event! ↑↑  ***==========***
 
     // Setting show "Bottom"
