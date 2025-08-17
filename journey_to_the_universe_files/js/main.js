@@ -1,6 +1,6 @@
 'use strict';
 
-// ***==========*** Window Size Warning! ***==========***
+// ***==========*** ↓↓ Window Size Warning! ↓↓ ***==========***
 function checkScreenWidth() {
     const screenWidth = window.innerWidth;
 
@@ -15,7 +15,9 @@ window.onload = checkScreenWidth;
 // Runs every time the window size is changed
 window.addEventListener('resize', checkScreenWidth);
 
-// ***==========*** Setting scroll event! ***==========***
+// ***==========*** ↑↑ Window Size Warning! ↑↑ ***==========***
+
+// ***==========*** ↓↓  Setting scroll event! ↓↓  ***==========***
 window.onload = function() {
     // Setting show "Bottom"
     let journeyToTheUniverseScrollInner = document.getElementById('journey_to_the_universe_scroll-inner');
@@ -1803,3 +1805,4 @@ window.onload = function() {
         }
     });
 }
+// ***==========*** ↑↑  Setting scroll event! ↑↑  ***==========***
