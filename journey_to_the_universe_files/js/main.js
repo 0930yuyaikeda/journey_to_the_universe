@@ -199,6 +199,8 @@ window.onload = function() {
     let lightSpeedMessageEnglish4Switch =false;
     let lightSpeedMessageJapanese5Switch =false;
     let lightSpeedMessageEnglish5Switch =false;
+    let lightSpeedMessageJapanese6Switch =false;
+    let lightSpeedMessageEnglish6Switch =false;
     // sky color gradation
     let skyColorGradationSwitch1 =false;
     let skyColorGradationSwitch2 =false;
@@ -1695,6 +1697,10 @@ window.onload = function() {
         let lightSpeedMessageJapanese5Position = lightSpeedMessageJapanese5.offsetTop;
         let lightSpeedMessageEnglish5 = document.getElementById("light_speed_message_english5");
         let lightSpeedMessageEnglish5Position = lightSpeedMessageEnglish5.offsetTop;
+        let lightSpeedMessageJapanese6 = document.getElementById("light_speed_message_japanese6");
+        let lightSpeedMessageJapanese6Position = lightSpeedMessageJapanese6.offsetTop;
+        let lightSpeedMessageEnglish6 = document.getElementById("light_speed_message_english6");
+        let lightSpeedMessageEnglish6Position = lightSpeedMessageEnglish6.offsetTop;
         // add css class
         if ( lightSpeedMessageJapanese1Position > scrollPosition) {
             // only one action
@@ -1773,6 +1779,22 @@ window.onload = function() {
             if ( lightSpeedMessageEnglish5Switch === false ) {
                 appearAction(lightSpeedMessageEnglish5, animateFadeIn);
                 lightSpeedMessageEnglish5Switch = true;
+            }
+        }
+        // add css class
+        if ( lightSpeedMessageJapanese6Position > scrollPosition) {
+            // only one action
+            if ( lightSpeedMessageJapanese6Switch === false ) {
+                appearAction(lightSpeedMessageJapanese6, animateFadeIn);
+                lightSpeedMessageJapanese6Switch = true;
+            }
+        }
+        // add css class
+        if ( lightSpeedMessageEnglish6Position > scrollPosition) {
+            // only one action
+            if ( lightSpeedMessageEnglish6Switch === false ) {
+                appearAction(lightSpeedMessageEnglish6, animateFadeIn);
+                lightSpeedMessageEnglish6Switch = true;
             }
         }
         // ***==========*** Light Speed Message ***==========***
