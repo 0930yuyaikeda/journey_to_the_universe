@@ -1367,7 +1367,7 @@ window.onload = function() {
                 // disappear action
                 window.setTimeout(function(){
                     disappearAction(voyager1MessageImg, animateZoomInRight, animateZoomOutLeft);
-                }, 5000);
+                }, 6000);
                 voyager1MessageImgSwitch = true;
             }
         }
@@ -1380,7 +1380,7 @@ window.onload = function() {
                 // disappear action
                 window.setTimeout(function(){
                     disappearAction(voyager1MessageJapanese, animateFlipInX, animateFlipOutX);
-                }, 5000);
+                }, 6000);
                 voyager1MessageJapaneseSwitch = true;
             }
         }
@@ -1393,7 +1393,7 @@ window.onload = function() {
                 // disappear action
                 window.setTimeout(function(){
                     disappearAction(voyager1MessageEnglish, animateFlipInX, animateFlipOutX);
-                }, 5000);
+                }, 6000);
                 voyager1MessageEnglishSwitch = true;
             }
         }
