@@ -19,6 +19,17 @@ window.addEventListener('resize', checkScreenWidth);
 
 // ***==========*** ↓↓  Setting scroll event! ↓↓  ***==========***
 window.onload = function() {
+
+    // ***==========*** ↓↓  Loading event! ↓↓  ***==========***
+    const loading = document.getElementById("loading");
+    loading.classList.add("display_non");
+
+    window.setTimeout(function(){
+        // loading.remove();
+    }, 1000);
+
+    // ***==========*** ↑↑  Loading event! ↑↑  ***==========***
+
     // Setting show "Bottom"
     let journeyToTheUniverseScrollInner = document.getElementById('journey_to_the_universe_scroll-inner');
     journeyToTheUniverseScrollInner.scrollIntoView(false);
