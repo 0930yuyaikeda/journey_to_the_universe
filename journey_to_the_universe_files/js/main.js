@@ -25,7 +25,7 @@ window.onload = function() {
     loading.classList.add("display_non");
 
     window.setTimeout(function(){
-        // loading.remove();
+        loading.remove();
     }, 1000);
 
     // ***==========*** ↑↑  Loading event! ↑↑  ***==========***
